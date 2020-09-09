@@ -1272,8 +1272,8 @@ We can check what are the most frequent Collision types present in the dataset. 
 
 
 ```python
-CountStatus = pd.value_counts(dfInfo['COLLISIONTYPE'].values, sort=True)
-CountStatus.plot.barh()
+import seaborn as sns
+ax = sns.barplot(x="day", y="total_bill", data=tips)
 ```
 
 
